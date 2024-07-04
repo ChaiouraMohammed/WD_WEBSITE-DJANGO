@@ -1,0 +1,105 @@
+{% extends 'sqlForDataAPP/master.html' %}
+{% block content %}
+{% load static %}
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title light-background">
+      <div class="container">
+        <h1>About</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">About</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- About 2 Section -->
+   <section id="about-2" class="about-2 section">
+  <div class="container">
+    <div class="content">
+      <div class="row justify-content-center align-items-center">
+        <!-- Image Column -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="img-wrap text-center text-md-left" data-aos="fade-up" data-aos-delay="100">
+            <div class="img">
+              <img src="{% static 'img/pic-10.jpg' %}" alt="circle image" class="img-fluid">
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Text Column -->
+        <div class="col-md-6 col-lg-6" data-aos="fade-up">
+          <div class="px-3">
+            <h2 class="content-title">
+              Empowering Data Innovation: Our Mission to Transform Insights into Action
+            </h2>
+            <p class="lead">
+              Our mission is to revolutionize data analysis by providing a user-friendly platform that empowers both novices and experts to harness the full potential of their data. We aim to democratize access to powerful analytical tools, enabling individuals and businesses to make informed decisions swiftly and confidently. By combining the flexibility of SQL, the versatility of Python, and the insights of statistical analysis, our software empowers users to extract meaningful insights, uncover trends, and drive innovation in their fields. Whether you're a data scientist, programmer, or data analyst, our platform equips you with the tools needed to transform raw data into actionable intelligence, driving success and growth in today's data-driven world.
+            </p>
+            <p>
+              <a href="{% url 'contact' %}" class="btn-get-started">Contact Us</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- /About 2 Section -->
+
+
+    <!-- Services Section -->
+   <!-- /Services Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section light-background">
+    <div class="container">
+        <div class="row gy-4 justify-content-center">
+            <div class="col-lg-5">
+                <div class="images-overlap">
+                    <img src="{% static 'img/pic-11.avif' %}" alt="software" class="img-fluid img-1" data-aos="fade-up">
+
+                </div>
+            </div>
+            <div class="col-lg-6 ps-lg-5">
+                <h2 class="content-title">Empowering Data Innovation: Transforming Insights into Action</h2>
+                <p class="lead">
+                    Our software revolutionizes data analysis by providing a user-friendly platform that empowers both novices and experts to harness the full potential of their data.
+                </p>
+                <p class="mb-5">
+                    We aim to democratize access to powerful analytical tools, enabling individuals and businesses to make informed decisions swiftly and confidently. By combining the flexibility of SQL, the versatility of Python, and the insights of statistical analysis, our software empowers users to extract meaningful insights, uncover trends, and drive innovation in their fields.
+                </p>
+                <div class="row mb-5 count-numbers">
+                    <!-- Start Stats Item -->
+                    <div class="col-4 counter" data-aos="fade-up" data-aos-delay="100">
+                        <span data-purecounter-separator="true" data-purecounter-start="0" data-purecounter-end="5000" data-purecounter-duration="1" class="purecounter number"></span>
+                        <span class="d-block">Users</span>
+                    </div>
+                    <!-- End Stats Item -->
+                    <!-- Start Stats Item -->
+                    <div class="col-4 counter" data-aos="fade-up" data-aos-delay="200">
+                        <span data-purecounter-separator="true" data-purecounter-start="0" data-purecounter-end="10000" data-purecounter-duration="1" class="purecounter number"></span>
+                        <span class="d-block">Analyses</span>
+                    </div>
+                    <!-- End Stats Item -->
+                    <!-- Start Stats Item -->
+                    <div class="col-4 counter" data-aos="fade-up" data-aos-delay="300">
+                        <span data-purecounter-separator="true" data-purecounter-start="0" data-purecounter-end="1500" data-purecounter-duration="1" class="purecounter number"></span>
+                        <span class="d-block">Projects</span>
+                    </div>
+                    <!-- End Stats Item -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Stats Section -->
+
+
+  </main>
+
+  {% endblock %}

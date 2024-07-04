@@ -1,0 +1,553 @@
+{% extends 'sqlForDataAPP/master.html' %}
+{% block content %}
+{% load static %}
+
+  <main class="main">
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-lg-7 mb-5 mb-lg-0 order-lg-2" data-aos="fade-up" data-aos-delay="400">
+            <div class="swiper init-swiper">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  },
+                  "breakpoints": {
+                    "320": {
+                      "slidesPerView": 1,
+                      "spaceBetween": 40
+                    },
+                    "1200": {
+                      "slidesPerView": 1,
+                      "spaceBetween": 1
+                    }
+                  }
+                }
+              </script>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="{% static '/img/pic-1.jpg' %}" alt="Image" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                  <img src="{% static '/img/pic-2.jpg' %}" alt="Image" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                  <img src="{% static '/img/pic-3.jpg' %}" alt="Image" class="img-fluid">
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="col-lg-4 order-lg-1">
+            <span class="section-subtitle" data-aos="fade-up">Welcome</span>
+            <h1 class="mb-4" data-aos="fade-up">
+              Empower Your Data Journey with SQLive-DATA
+            </h1>
+            <p data-aos="fade-up">
+              Unlock the full potential of your data with our intuitive interface,
+              designed to simplify SQL queries and streamline data analysis.
+              Transform raw data into actionable insights and drive smarter decisions effortlessly.
+
+            </p>
+            <p class="mt-5" data-aos="fade-up">
+              <a href="#" class="btn btn-get-started">Get Started</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section><!-- /About Section -->
+
+    <!-- About 2 Section -->
+    <section id="about-2" class="about-2 section light-background">
+
+      <div class="container">
+        <div class="content">
+          <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-5 col-lg-4 col-xl-4 order-lg-2 offset-xl-1 mb-4">
+              <div class="img-wrap text-center text-md-left" data-aos="fade-up" data-aos-delay="100">
+                <br>
+                <div class="img">
+                  <img src="{% static '/img/pic-4.png' %}" alt="circle image" class="img-fluid">
+                </div>
+              </div>
+            </div>
+
+            <div class="offset-md-0 offset-lg-1 col-sm-12 col-md-5 col-lg-5 col-xl-4" data-aos="fade-up">
+              <div class="px-3">
+                <h2 class="content-title text-start" style="text-align:justify;">
+                  Data Analytics Languages tendencies
+                </h2>
+                <p class="lead">
+                  SQL has always been the go-to for many to interact with data and to develop
+                  dashboards & insights, but Python’s flexibility and
+                  broader use allow someone to analyze as well as clean/organize data as well.
+                </p>
+                <br>
+
+                <p>
+                  <a href="#" class="btn-get-started">Get Started</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /About 2 Section -->
+
+    <!-- Services Section -->
+   <section id="services" class="services section light-background">
+
+  <div class="container">
+    <div class="row gy-4 justify-content-center">
+
+      <div class="col-lg-3">
+        <div class="services-item" data-aos="fade-up">
+          <div class="services-icon">
+            <i class="bi bi-bullseye"></i>
+          </div>
+          <div>
+            <h3>Technology</h3>
+            <p>Stay ahead with cutting-edge technology solutions tailored to your business needs.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="services-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="services-icon">
+            <i class="bi bi-command"></i>
+          </div>
+          <div>
+            <h3>Web Design</h3>
+            <p>Create visually appealing and functional websites that resonate with your audience.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="services-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="services-icon">
+            <i class="bi bi-bar-chart"></i>
+          </div>
+          <div>
+            <h3>Data Science</h3>
+            <p>Harness the power of data with advanced analytics and machine learning for informed decision-making.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- /Services Section -->
+
+    <!-- Stats Section -->
+    <!-- Stats Section -->
+<section id="stats" class="stats section light-background">
+
+  <div class="container">
+
+    <div class="row gy-4 justify-content-center">
+
+      <div class="col-lg-5">
+        <div class="images-overlap">
+          <img src="{% static '/img/pic-5.jpg' %}" alt="data analysis" class="img-fluid img-1" data-aos="fade-up">
+        </div>
+      </div>
+
+      <div class="col-lg-4 ps-lg-5">
+        <br>
+        <h2 class="content-title">Why Choose Our Data Analysis Tool</h2>
+        <p class="lead">
+          Our data analysis tool is designed to be flexible, customizable, and highly effective, helping you extract valuable insights and make informed decisions quickly and efficiently.
+        </p>
+        <p class="mb-5">
+          In the world of data, having the right tools can make all the difference. Our editor empowers data scientists, programmers, and analysts to transform raw data into actionable intelligence.
+        </p>
+        <div class="row mb-5 count-numbers">
+
+          <!-- Start Stats Item -->
+
+          <!-- End Stats Item -->
+
+          <!-- Start Stats Item -->
+
+          <!-- End Stats Item -->
+
+          <!-- Start Stats Item -->
+
+          <!-- End Stats Item -->
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- /Stats Section -->
+<!-- /Stats Section -->
+
+    <!-- Blog Posts Section -->
+   <!-- /Blog Posts Section -->
+
+    <!-- Tabs Section -->
+    <!-- Tabs Section -->
+<section id="tabs" class="tabs section light-background">
+
+  <div class="container">
+    <div class="row gap-x-lg-4 justify-content-between">
+      <div class="col-lg-4 js-custom-dots">
+        <a href="#" class="service-item link horizontal d-flex active" data-aos="fade-left" data-aos-delay="0">
+          <div class="service-icon color-1 mb-4">
+            <i class="bi bi-database"></i>
+          </div>
+          <!-- /.icon -->
+          <div class="service-contents">
+            <h3>Advanced SQL Queries</h3>
+            <p>
+              Utilize powerful SQL queries to manipulate and analyze your data with precision and efficiency.
+            </p>
+          </div>
+          <!-- /.service-contents-->
+        </a>
+        <!-- /.service -->
+
+        <a href="#" class="service-item link horizontal d-flex" data-aos="fade-left" data-aos-delay="100">
+          <div class="service-icon color-2 mb-4">
+            <i class="bi bi-bar-chart"></i>
+          </div>
+          <!-- /.icon -->
+          <div class="service-contents">
+            <h3>Comprehensive Data Analysis</h3>
+            <p>
+              Gain deep insights from your data using advanced analytical techniques and intuitive visualization tools.
+            </p>
+          </div>
+          <!-- /.service-contents-->
+        </a>
+        <!-- /.service -->
+
+        <a href="#" class="service-item link horizontal d-flex" data-aos="fade-left" data-aos-delay="200">
+          <div class="service-icon color-3 mb-4">
+            <i class="bi bi-graph-up"></i>
+          </div>
+          <!-- /.icon -->
+          <div class="service-contents">
+            <h3>Statistical Analysis</h3>
+            <p>
+              Apply robust statistical methods to uncover trends, patterns, and correlations within your datasets.
+            </p>
+          </div>
+          <!-- /.service-contents-->
+        </a>
+        <!-- /.service -->
+
+        <a href="#" class="service-item link horizontal d-flex" data-aos="fade-left" data-aos-delay="300">
+          <div class="service-icon color-4 mb-4">
+            <i class="bi bi-lightbulb"></i>
+          </div>
+          <!-- /.icon -->
+          <div class="service-contents">
+            <h3>Data-Driven Insights</h3>
+            <p>
+              Transform raw data into actionable insights that drive strategic decision-making and innovation.
+            </p>
+          </div>
+          <!-- /.service-contents-->
+        </a>
+        <!-- /.service -->
+      </div>
+
+      <div class="col-lg-8">
+        <div class="swiper init-swiper-tabs">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoHeight": true,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="{% static '/img/pic-6.jpg' %}" alt="Image" class="img-fluid">
+              <div class="p-4">
+                <h3 class="text-black h5 mb-3">Advanced SQL Queries</h3>
+                <div class="row">
+                  <div class="col-lg-8">
+                    <p>
+                      Utilize powerful SQL queries to manipulate and analyze your data with precision and efficiency. Our tool supports a wide range of SQL functions and commands to meet your data management needs.
+                    </p>
+                    <p>
+                      Whether you need to perform complex joins, aggregate data, or execute stored procedures, our platform provides the flexibility and control you need to handle your SQL operations seamlessly.
+                    </p>
+                  </div>
+                  <div class="col-lg-4">
+                    <ul class="list-unstyled list-check">
+                      <li>Complex data joins</li>
+                      <li>Aggregation functions</li>
+                      <li>Stored procedures</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+
+              <img src="{% static '/img/pic-7.avif' %}" height="10px" alt="Image" class="img-fluid">
+              <div class="p-4">
+                <h3 class="text-black h5 mb-3">Comprehensive Data Analysis</h3>
+                <div class="row">
+                  <div class="col-lg-8">
+                    <p>
+                      Gain deep insights from your data using advanced analytical techniques and intuitive visualization tools. Our platform makes it easy to explore data patterns and relationships.
+                    </p>
+                    <p>
+                      From basic data exploration to advanced machine learning models, our tool supports a variety of analysis methods to help you uncover hidden insights and drive better decision-making.
+                    </p>
+                  </div>
+                  <div class="col-lg-4">
+                    <ul class="list-unstyled list-check">
+                      <li>Data exploration</li>
+                      <li>Visualization tools</li>
+                      <li>Machine learning models</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="{% static '/img/pic-8.avif' %}" alt="Image" class="img-fluid">
+              <div class="p-4">
+                <h3 class="text-black h5 mb-3">Statistical Analysis</h3>
+                <div class="row">
+                  <div class="col-lg-8">
+                    <p>
+                      Apply robust statistical methods to uncover trends, patterns, and correlations within your datasets. Our tool provides a comprehensive suite of statistical functions to support your analysis needs.
+                    </p>
+                    <p>
+                      From basic descriptive statistics to advanced inferential methods, our platform helps you make sense of your data and draw meaningful conclusions that can inform your strategies and actions.
+                    </p>
+                  </div>
+                  <div class="col-lg-4">
+                    <ul class="list-unstyled list-check">
+                      <li>Descriptive statistics</li>
+                      <li>Inferential statistics</li>
+                      <li>Correlation analysis</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="{% static '/img/pic-9.avif' %}" alt="Image" class="img-fluid">
+              <div class="p-4">
+                <h3 class="text-black h5 mb-3">Data-Driven Insights</h3>
+                <div class="row">
+                  <div class="col-lg-8">
+                    <p>
+                      Transform raw data into actionable insights that drive strategic decision-making and innovation. Our platform enables you to harness the full potential of your data, turning it into a valuable asset.
+                    </p>
+                    <p>
+                      With our comprehensive tools and features, you can identify key trends, forecast future outcomes, and optimize your operations based on data-driven insights.
+                    </p>
+                  </div>
+                  <div class="col-lg-4">
+                    <ul class="list-unstyled list-check">
+                      <li>Trend analysis</li>
+                      <li>Forecasting</li>
+                      <li>Operational optimization</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+   <!-- /Tabs Section -->
+
+    <!-- Services 2 Section -->
+    <section id="services-2" class="services-2 section">
+
+  <div class="container">
+    <div class="row justify-content-center" data-aos="fade-up">
+      <div class="col-md-6 col-lg-4">
+        <h2 class="content-title">
+          Empower Your Data with SQL and Python
+        </h2>
+        <p class="lead">
+          Leverage the strengths of SQL for powerful data management and Python for advanced data analysis and automation.
+        </p>
+        <p class="mb-5">
+          Our platform integrates seamlessly with both technologies, providing you with a robust and flexible toolkit to handle all your data needs.
+        </p>
+        <p>
+          <a href="#" class="btn btn-get-started">Get Started</a>
+        </p>
+      </div>
+      <div class="col-md-6 col-lg-6 ps-lg-5">
+        <div class="row">
+          <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="services-item" data-aos="fade-up" data-aos-delay="">
+              <div class="services-icon">
+                <i class="bi bi-database"></i>
+              </div>
+              <div>
+                <h3>SQL Queries</h3>
+                <p>Efficiently manage and manipulate your data using advanced SQL queries.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="services-item" data-aos="fade-up" data-aos-delay="100">
+              <div class="services-icon">
+                <i class="bi bi-bar-chart"></i>
+              </div>
+              <div>
+                <h3>Data Analysis</h3>
+                <p>Conduct comprehensive data analysis and derive actionable insights using Python.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="services-item" data-aos="fade-up" data-aos-delay="200">
+              <div class="services-icon">
+                <i class="bi bi-cpu"></i>
+              </div>
+              <div>
+                <h3>Automation</h3>
+                <p>Automate repetitive tasks and workflows with powerful Python scripts.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="services-item" data-aos="fade-up" data-aos-delay="300">
+              <div class="services-icon">
+                <i class="bi bi-diagram-3"></i>
+              </div>
+              <div>
+                <h3>Integration</h3>
+                <p>Seamlessly integrate SQL and Python to create a cohesive data management ecosystem.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Services 2 Section -->
+
+    <!-- Pricing Section -->
+    <!-- End Pricing Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Pricing Section -->
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Frequently Asked Questions</h2>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up">
+    <div class="row">
+      <div class="col-12">
+        <div class="custom-accordion" id="accordion-faq">
+          <div class="accordion-item">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-1">
+                What are the benefits of using SQL for data analysis?
+              </button>
+            </h2>
+
+            <div id="collapse-faq-1" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion-faq">
+              <div class="accordion-body">
+                SQL allows you to perform structured querying and manipulation of data stored in databases. It's ideal for managing large datasets efficiently and performing complex analyses such as aggregations, joins, and filtering operations.
+              </div>
+            </div>
+          </div>
+          <!-- .accordion-item -->
+
+          <div class="accordion-item">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-2">
+                How can Python enhance data analysis capabilities?
+              </button>
+            </h2>
+            <div id="collapse-faq-2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-faq">
+              <div class="accordion-body">
+                Python offers extensive libraries such as Pandas, NumPy, and Matplotlib, which facilitate advanced data manipulation, statistical analysis, and visualization. It complements SQL by providing tools for machine learning, predictive modeling, and data-driven decision-making.
+              </div>
+            </div>
+          </div>
+          <!-- .accordion-item -->
+
+          <div class="accordion-item">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-3">
+                How to integrate SQL and Python for comprehensive data analysis?
+              </button>
+            </h2>
+
+            <div id="collapse-faq-3" class="collapse" aria-labelledby="headingThree" data-parent="#accordion-faq">
+              <div class="accordion-body">
+                Integrating SQL and Python allows you to leverage SQL for data extraction and initial processing, and Python for in-depth analysis and visualization. Use SQL to retrieve structured data and Python to apply statistical models, create interactive visualizations, and automate analytical workflows.
+              </div>
+            </div>
+          </div>
+          <!-- .accordion-item -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Faq Section -->
+
+    <!-- Testimonials Section -->
+    <!-- /Testimonials Section -->
+
+  </main>
+
+{% endblock %}
